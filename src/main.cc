@@ -49,7 +49,7 @@ int main(void) {
   auto say_hello = [](const HttpRequest& request) -> HttpResponse {
     HttpResponse response(HttpStatusCode::Ok);
     response.SetHeader("Content-Type", "text/plain");
-    response.SetContent("Hello, world\n");
+    response.SetContent("Hello, world\nThis is a simple HTTP server, based on This simple server from trungams: https://github.com/trungams/http-server");
     return response;
   };
   auto send_html = [](const HttpRequest& request) -> HttpResponse {
